@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>{{account}}</h3>
+    <h3>{{'@' + account}}</h3>
     <line-chart :data="allPoints[account]"></line-chart>
   </div>
 </template>
