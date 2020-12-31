@@ -22,7 +22,7 @@ async function getMetrics() {
                     Accept: 'application/json'
                 }
             }).then(res => {
-                results[key] = 1;
+                results[key] = res.data.statuses.length;
             }).catch(error => {
                 console.log(error)
             })
